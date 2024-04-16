@@ -1,0 +1,246 @@
+.gridLogos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.gridLogosItem {
+  align-self: center;
+  height: 125px;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.logo {
+  margin-top: 1.5rem;
+}
+
+@media all and (max-width: 600px) {
+  .gridLogosItem {
+    flex-basis: 100%;
+  }
+}
+
+@media all and (min-width: 450px) {
+  .gridLogosItem {
+    flex-basis: 25%;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .gridLogosItem {
+    flex-basis: 30%;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .gridLogos {
+    padding: 0rem 6.5rem;
+  }
+}
+
+.gridLogos img {
+  max-height: 100px;
+  max-width: 175px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media only screen and (max-width: 800px) {
+  .middleSection {
+    height: 100%;
+  }
+  .mainBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .rightSide {
+    display: none;
+  }
+  .content {
+    height: 12rem !important;
+  }
+  .mainHeading {
+    margin-top: 50px !important;
+  }
+}
+
+.link {
+  color: var(--main-dark-color);
+  text-decoration: none;
+}
+
+@media all and (max-width: 449px) {
+  .gridLogosItem {
+    flex-basis: 33%;
+  }
+  .gridLogos img {
+    max-height: 50px;
+    max-width: 75px;
+  }
+}
+
+.technologyBrands {
+  height: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.centerContainer {
+  text-align: center;
+}
+
+.mainHeading {
+  font-weight: 600;
+  color: black;
+  font-size: 32px;
+  margin-top: 100px;
+  font-family: sans-serif;
+}
+
+.gridLogos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gridLogosItem {
+  align-self: center;
+  height: 100px;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+@media all and (max-width: 600px) {
+  .gridLogosItem {
+    flex-basis: 100%;
+  }
+  .gridLogosItemm {
+    flex-basis: 100%;
+  }
+}
+
+@media all and (min-width: 450px) {
+  .gridLogosItem {
+    flex-basis: 25%;
+  }
+  .gridLogosItemm {
+    flex-basis: 25%;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .gridLogosItem {
+    flex-basis: 30%;
+  }
+  .gridLogosItemm {
+    flex-basis: 30%;
+  }
+}
+
+.gridLogos img {
+  max-height: 80px;
+  max-width: 150px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 373px) {
+  .gridLogosItem {
+    flex-wrap: wrap;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .mainHeading {
+    margin-top: 50px !important;
+  }
+}
+
+@media all and (max-width: 449px) {
+  .gridLogosItem {
+    flex-basis: 33%;
+  }
+
+  .gridLogos img {
+    max-height: 50px;
+    max-width: 75px;
+  }
+}
+
+.heading {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+  color: #252b33;
+}
+
+.content {
+  background: #fff;
+  color: #373737;
+  backface-visibility: hidden;
+  height: 8rem;
+}
+.content > div {
+  display: none;
+  padding: 20px 25px 5px;
+}
+.inputField {
+  display: none;
+}
+
+.labelField {
+  display: inline-block;
+  padding: 15px 25px;
+  font-family: sans-serif;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease-out 0.1s;
+}
+.labelField:hover {
+  cursor: pointer;
+}
+.inputField:checked + .labelField {
+  background: #ffffff;
+  color: var(--main-light-bg-color);
+  border-bottom: 2px solid;
+}
+
+.content > div,
+.content > div,
+.content > div,
+.content > div,
+.content > div,
+.content > div {
+  display: block;
+  animation-name: inUp;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.7s;
+}
+
+@media screen and (max-width: 400px) {
+  .labelField {
+    padding: 15px 10px;
+  }
+}
+
+@keyframes inUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  90% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

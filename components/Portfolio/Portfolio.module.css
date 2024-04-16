@@ -1,0 +1,798 @@
+.portfolioSection {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 600px;
+}
+
+.porfolioTopSection {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    /* Needed for positioning pseudo-element */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.porfolioTopSection::before {
+    content: "";
+    /* Create pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../public/assets/images/image-bg.jpg');
+    /* Replace 'your-image-url.jpg' with your actual image path */
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.1;
+    /* Adjust opacity value between 0 and 1 */
+    z-index: -1;
+    /* Ensure pseudo-element stays behind other content */
+}
+
+.textSection {
+    padding: 0px 20px 0px 20px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.textSectionButton {
+    background-color: #1d78be;
+    color: white;
+    font-size: 15px;
+    border: none;
+    height: 40px;
+    width: auto;
+    border-radius: 10px;
+    padding: 5px 25px 5px 25px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    /* Add transition properties */
+}
+
+.textSectionButton:hover {
+    background-color: white;
+    color: #1d78be;
+    border: 1px solid #1d78be
+}
+
+.formSection {
+    padding: 0px 30px 0px 30px;
+    width: 30%;
+}
+
+.form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+}
+
+.fieldDiv {
+    width: 100%;
+}
+
+.fieldDivBtn {
+    align-items: flex-start;
+    margin-left: 55px;
+}
+
+.form>* {
+    margin-top: 20px;
+}
+
+.fieldDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.field {
+    width: 80%;
+    /* Set custom width */
+    height: 40px
+        /* Set custom height */
+    ;
+    padding-left: 10px;
+}
+
+.porfolioBottomSection {
+    margin-top: 50px;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsappLogo {
+    position: absolute;
+    left: 20px;
+    font-size: 60px;
+}
+
+.buttonDivBottom {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin-left: 20%; */
+    /* background-color: brown; */
+}
+
+.bottomSectionButtonSelected {
+    background-color: #1d78be;
+    color: white;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    width: auto;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    /* Add transition properties */
+
+    padding: 5px 25px 5px 25px;
+}
+
+.bottomSectionButtonSelected:hover {
+    background-color: white;
+    color: #1d78be;
+}
+
+.bottomSectionButtonNonSelected {
+    background-color: white;
+    border: 2px solid #1d78be;
+    color: #1d78be;
+    font-size: 15px;
+    height: 40px;
+    width: auto;
+    border-radius: 20px;
+    padding: 5px 25px 5px 25px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    /* Add transition properties */
+
+}
+
+.bottomSectionButtonNonSelected:hover {
+    background-color: #1d78be;
+    color: white;
+}
+
+
+/* Responsive Code */
+@media (max-width: 1650px) and (min-width: 1200px) {
+    .buttonDivBottom {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+    .buttonDivBottom {
+        width: 50%;
+    }
+
+    .formSection {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .portfolioSection {
+        height: auto;
+    }
+
+    .porfolioTopSection {
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: auto;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .textSection {
+        width: 100%;
+        align-items: center;
+    }
+
+    .formSection {
+        align-items: center;
+        margin-top: 40px;
+        width: 60%;
+    }
+
+    .fieldDiv {
+        width: 100%;
+    }
+
+    .form {
+        align-items: center;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .buttonDivBottom {
+        width: 70%;
+    }
+}
+
+@media (max-width: 700px) and (min-width:550px) {
+    .buttonDivBottom {
+        width: 70%;
+    }
+
+    .buttonDivBottom button {
+        padding: 0 10px 0 10px;
+    }
+
+    .bottomSectionButtonNonSelected {
+        font-size: 13px;
+    }
+
+    .whatsappLogo {
+        left: 20px;
+        font-size: 33px;
+
+    }
+
+    .bottomSectionButtonSelected {
+        font-size: 13px;
+    }
+
+    .formSection {
+        width: 100%;
+    }
+
+    .fieldDivBtn {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:550px) and (min-width:400px) {
+    .buttonDivBottom {
+        width: 70%;
+    }
+
+    .whatsappLogo {
+        left: 20px;
+        font-size: 33px;
+
+    }
+
+    .bottomSectionButtonNonSelected {
+        font-size: 9px;
+        width: 65px;
+        padding: 0 0 0 0;
+        font-weight: bold;
+        margin-left: 0;
+    }
+
+    .bottomSectionButtonSelected {
+        font-size: 9px;
+        width: 60px;
+        padding: 0 0 0 0;
+        font-weight: bold;
+    }
+
+    .formSection {
+        width: 100%;
+    }
+
+    .fieldDivBtn {
+        margin-left: 0px;
+    }
+
+    .cardbg1 {
+        height: 100px;
+    }
+
+    .cardbg2 {
+        height: 100px;
+    }
+
+    .cardbg3 {
+        height: 100px;
+    }
+}
+
+@media (max-width:400px) {
+    .buttonDivBottom {
+        width: 60%;
+    }
+
+    .whatsappLogo {
+        left:5px;
+        font-size: 33px;
+
+    }
+
+    .bottomSectionButtonNonSelected {
+        font-size: 9px;
+        width: 65px;
+        padding: 0 0 0 0;
+        font-weight: bold;
+        margin-left: 0;
+    }
+
+    .bottomSectionButtonSelected {
+        font-size: 9px;
+        width: 60px;
+        padding: 0 0 0 0;
+        font-weight: bold;
+    }
+
+    .formSection {
+        width: 100%;
+    }
+
+    .fieldDivBtn {
+        margin-left: 0px;
+    }
+
+    .cardbg1 {
+        height: 100px;
+    }
+
+    .cardbg2 {
+        height: 100px;
+    }
+
+    .cardbg3 {
+        height: 100px;
+    }
+}
+
+
+
+
+/* Card Section */
+.cardDivSection {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.backButtonDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    margin-left: 50px;
+}
+
+.backBtn {
+    /* background-color: white; */
+    color: #1d78be;
+    font-size: 45px;
+    /* border:1px solid #1d78be; */
+    height: 65px;
+    width: auto;
+    border-radius: 25px;
+    padding: 5px 25px 5px 25px;
+    margin-left: 10px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    /* Add transition properties */
+    font-weight: bold;
+}
+
+.backbtnImg {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.cardDivMain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    height: auto;
+    background-color: white;
+    padding-bottom: 30px;
+    border: 1px solid grey
+}
+
+.cardbg1 {
+    width: 100%;
+    /* background-color: #2E8B57; */
+    background-image: url('../../public/assets/images/card1.png');
+    /* Replace 'your-image-url.jpg' with your actual image path */
+    background-size: contain;
+    /* Ensure entire image is visible */
+    background-repeat: no-repeat;
+    /* Prevent image from repeating */
+    height: 550px;
+}
+
+.cardbg2 {
+    width: 100%;
+    background-image: url('../../public/assets/images/card2.png');
+    /* Replace 'your-image-url.jpg' with your actual image path */
+    background-size: contain;
+    /* Ensure entire image is visible */
+    background-repeat: no-repeat;
+    /* Prevent image from repeating */
+    height: 550px;
+
+
+
+}
+
+.cardbg3 {
+    width: 100%;
+    background-image: url('../../public/assets/images/card3.png');
+    /* Replace 'your-image-url.jpg' with your actual image path */
+    background-size: contain;
+    /* Ensure entire image is visible */
+    background-repeat: no-repeat;
+    /* Prevent image from repeating */
+    height: 550px;
+
+
+
+}
+
+.cardHeading {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.cardtext {
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 0px 30px 0px 30px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cardButton {
+
+    background-color: white;
+    color: #1d78be;
+    font-size: 15px;
+    border: 1px solid #1d78be;
+    height: 60px;
+    width: auto;
+    border-radius: 25px;
+    padding: 5px 25px 5px 25px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    /* Add transition properties */
+    font-weight: bold;
+
+}
+
+.cardButton:hover {
+
+    background-color: #1d78be;
+    color: white;
+}
+
+@media (max-width: 1400px) and (min-width:1000px) {
+
+    .cardtext {
+        font-size: 14px;
+
+    }
+
+    .cardbg1 {
+        width: 100%;
+        height: 370px;
+    }
+
+    .cardbg2 {
+        width: 100%;
+        height: 370px;
+    }
+
+    .cardbg3 {
+        width: 100%;
+        height: 370px;
+    }
+}
+
+@media (max-width: 1000px) and (min-width:850px) {
+    .backButtonDiv {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .cardtext {
+        font-size: 10px;
+
+    }
+
+    .cardbg1 {
+        width: 100%;
+        height: 250px;
+        /* } */
+    }
+
+    .cardbg2 {
+        width: 100%;
+        height: 250px;
+    }
+
+    .cardbg3 {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (max-width:850px) and (min-width:700px) {
+    .backButtonDiv {
+        margin-top: 30px;
+        width: 90%;
+    }
+
+    .cardDivMain {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .cardbg1 {
+        width: 100%;
+        height: 560px;
+        /* } */
+    }
+
+    .cardbg2 {
+        width: 100%;
+        height: 550px;
+
+    }
+
+    .cardbg3 {
+        width: 100%;
+        height: 550px;
+
+    }
+
+    .cardtext {
+
+        font-size: 15px;
+
+    }
+}
+
+@media (max-width:700px) and (min-width:600px) {
+    .backButtonDiv {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .cardtext {
+        font-size: 15px;
+
+    }
+
+    .cardDivMain {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .cardbg1 {
+        width: 100%;
+
+        height: 500px;
+    }
+
+    .cardbg2 {
+        width: 100%;
+
+        height: 500px;
+
+    }
+
+    .cardbg3 {
+        width: 100%;
+
+        height: 500px;
+
+    }
+}
+
+@media (max-width:600px) and (min-width:450px) {
+    .backBtn {
+        /* background-color: white; */
+        margin-left: 0px;
+        font-size: 30px;
+        margin-top: 25px;
+        padding: 5 10 5 10;
+        /* border:1px solid #1d78be; */
+
+    }
+
+    .backButtonDiv {
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    .cardtext {
+
+        font-size: 13px;
+
+    }
+
+    .cardDivMain {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .cardbg1 {
+        width: 100%;
+
+        height: 400px;
+    }
+
+    .cardbg2 {
+        width: 100%;
+
+        height: 400px;
+
+    }
+
+    .cardbg3 {
+        width: 100%;
+
+        height: 400px;
+
+    }
+}
+
+
+@media (max-width:450px) and (min-width:350px) {
+    .backBtn {
+        /* background-color: white; */
+        margin-left: 0px;
+        font-size: 30px;
+        margin-top: 25px;
+        padding: 5 10 5 10;
+        /* border:1px solid #1d78be; */
+
+    }
+
+    .backButtonDiv {
+        margin-top: 30px;
+        width: 90%;
+    }
+
+    .cardtext {
+
+        font-size: 12px;
+
+    }
+
+    .cardDivMain {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .cardbg1 {
+        width: 100%;
+
+        height: 330px;
+    }
+
+    .cardbg2 {
+        width: 100%;
+
+        height: 330px;
+
+    }
+
+    .cardbg3 {
+        width: 100%;
+
+        height: 330px;
+
+    }
+}
+
+
+
+
+@media (max-width:350px) {
+    .backBtn {
+        /* background-color: white; */
+        margin-left: 0px;
+        font-size: 30px;
+        margin-top: 25px;
+        /* border:1px solid #1d78be; */
+
+    }
+
+    .backButtonDiv {
+        margin-top: 30px;
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .cardtext {
+
+        font-size: 12px;
+
+    }
+
+    .cardDivMain {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .cardbg1 {
+        width: 100%;
+
+        height: 230px;
+    }
+
+    .cardbg2 {
+        width: 100%;
+
+        height: 330px;
+
+    }
+
+    .cardbg3 {
+        width: 100%;
+
+        height: 330px;
+
+    }
+}

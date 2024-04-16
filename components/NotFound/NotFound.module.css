@@ -1,0 +1,130 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerWrapper {
+    margin-top: auto;
+}
+
+.errorPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.errorBox {
+    width: 75%;
+    background-image: url('/assets/images/cover-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 5%;
+    color: var(--main-light-color);
+}
+
+.errorBox h1 {
+    font-size: 22.5vw;
+    text-align: center;
+}
+
+.errorHeading {
+    font-size: 44px !important;
+}
+
+.svgLineHome {
+    display: flex;
+    align-items: center;
+    /* position: absolute; */
+    right: 20%;
+    bottom: 20%
+}
+
+.svgLineHome span {
+    margin-left: 15px;
+    font-weight: 900;
+    font-size: 16px;
+    color: var(--main-light-color);
+    font-family: 'Raleway';
+}
+
+.topContainer {
+    width: 75px;
+    height: 150px;
+    background: #f5f5f5;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}
+
+.bottomContainer {
+    width: 150px;
+    height: 50px;
+    background: #f5f5f5;
+    position: absolute;
+    z-index: 1;
+    bottom: -25px;
+    left: 44%;
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    /* width: 180px; */
+}
+
+.buttonsContainer .line {
+    width: 50px;
+    height: 4px;
+    background: var(--main-light-color);
+    margin: 0px 20px;
+    margin-top: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.buttonsContainer span {
+    margin-left: 15px;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: TruenoBd;
+}
+
+.buttonsContainer:hover .line {
+    transform: translateX(10px);
+    width: 60px;
+}
+
+@media all and (max-width: 600px) {
+.topContainer {
+    display: none;
+}
+.bottomContainer {
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+.buttonsContainer span {
+    margin-left: 0px;
+    font-weight: 900;
+    font-size: 14px;
+}
+.errorHeading {
+    font-size: 30px !important;
+}
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+}
+.mainContainer {
+    height: 100vh;
+} 
+.errorPage {
+    margin-top: 20%;
+}
+} 

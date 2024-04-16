@@ -1,0 +1,256 @@
+@font-face {
+    src: url(/assets/font/TruenoLt.otf);
+    font-family: Trueno;
+}
+
+.middleSection {
+    height: 100vh;
+    margin-top: 70px;
+    font-family: Trueno;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.mainBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftSide {
+    width: 35%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5rem;
+    min-width: 300px;
+}
+
+@media screen and (max-width: 1024px) {
+    .leftSide {
+        padding-left: 2rem;
+    }
+    .leftSide:first-child {
+        width: 300px;
+        margin: 0px 10px 0px 0px;
+    }
+    .leftSide p {
+        width: 300px;
+    }
+}
+
+.leftSide:first-child {
+    width: 380px;
+    margin: 0px 50px 0px 0px;
+}
+
+.leftSide h2 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.leftSide p {
+    font-size: 16px;
+    width: 350px;
+    color: var(--main-text-color);
+}
+
+.rightSide {
+    width: 65%;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.childs {
+    padding: 0 20px;
+}
+
+.childs img {
+    margin-top: 25px;
+    width: 150px;
+    height: 100%;
+}
+
+.childs h3 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 800;
+    height: 50px;
+    color: #2c3e50;
+}
+
+.childs p {
+    height: 250px;
+    text-align: justify;
+    font-size: 14px;
+    color: var(--main-text-color);
+}
+
+.svgLine {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.svgLine h5 {
+    font-weight: bolder;
+    font-size: 16px;
+    font-family: 'Raleway';
+}
+
+.svgLine h6 {
+    margin-left: 15px;
+    font-weight: bolder;
+    font-family: 'Raleway';
+}
+
+.point {
+    stroke: var(--main-light-bg-color);
+    stroke-width: 1;
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    transition: 0.5s ease-in-out;
+}
+
+.buttonsContainer .line {
+    width: 50px;
+    height: 3.2px;
+    background: var(--main-light-bg-color);
+    margin: 0px 20px;
+    margin-top: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.buttonsContainer span {
+    margin-left: 15px;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: 'Raleway';
+}
+
+.buttonsContainer:hover .line {
+    transform: translateX(10px);
+    width: 75px;
+}
+
+@media all and (min-width:1440px) {
+    .row{
+        padding-right: 2rem;
+    }
+}
+
+@media all and (min-width:1441px) {
+    .parent {
+        padding-right: 18rem;
+    }
+}
+
+@media only screen and (max-width: 912px) {
+    .middleSection {
+        height: 100%;
+        margin-top: 0;
+    }
+    .mainBox {
+        display: flex;
+        flex-direction: column;
+    }
+    .leftSide {
+        display: block;
+        margin: 0 auto;
+        padding-left: 1rem;
+        padding-top: 2rem;
+        height: 100%;
+    }
+    .leftSide:first-child {
+        width: 100%;
+        margin: 0px 10px 0px 0px;
+    }
+    .leftSide h2 {
+        font-size: 28px;
+        font-weight: bolder;
+        margin-bottom: 25px;
+    }
+    .leftSide p {
+        font-size: 24px;
+        width: 95%;
+        text-align: justify;
+    }
+    .svgLine {
+        margin-bottom: 15px;
+        margin-top: 25px;
+    }
+    .svgLine h5 {
+        font-weight: bolder;
+        font-size: 14px;
+    }
+    .rightSide {
+        width: 100%;
+        height: 100%;
+    }
+    .parent {
+        height: 100%;
+        width: 100%;
+    }
+    .childs {
+        justify-content: center;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media all and (max-width: 767px) {
+    .middleSection{
+        margin-top: 10px;
+    }
+    .childs p{
+        height: 150px;
+    }
+}
+
+
+@media all and (max-width: 450px) {
+    .middleSection {
+        margin-top: 0px;
+    }
+    .leftSide h2{
+        font-size: 24px;
+    }
+    .leftSide p{
+        font-size: 18px;
+    }
+    .childs{
+        width: 95%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .childs h3{
+        text-align: center;
+    }
+    .childs p{
+        text-align: justify;
+        font-size: 16px;
+        height: 150px;
+    }
+}

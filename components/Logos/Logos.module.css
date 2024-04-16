@@ -1,0 +1,65 @@
+.gridLogoss {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.gridLogosItemm {
+  align-self: center;
+  height: 100px;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.link {
+  color: var(--main-dark-color);
+}
+
+.link:hover {
+  color: var(--main-dark-color);
+  text-decoration: none;
+}
+
+@media all and (max-width: 600px) {
+  .gridLogosItemm {
+    flex-basis: 100%;
+  }
+}
+
+@media all and (min-width: 450px) {
+  .gridLogosItemm {
+    flex-basis: 25%;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .gridLogosItemm {
+    flex-basis: 30%;
+  }
+}
+
+@media all and (max-width: 449px) {
+  .gridLogosItemm {
+    flex-basis: 33%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gridLogosItemm {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.gridLogoss img {
+  max-height: 80px;
+  max-width: 150px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

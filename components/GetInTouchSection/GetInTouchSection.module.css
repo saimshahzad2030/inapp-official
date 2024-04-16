@@ -1,0 +1,97 @@
+.buttonsContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  transition: 0.5s ease-in-out;
+  color: var(--main-dark-color);
+  cursor: pointer;
+}
+
+.buttonsContainer .line {
+  width: 50px;
+  height: 4px;
+  background: var(--main-light-color);
+  margin: 0px 20px;
+  margin-top: 5px;
+  transition: 0.5s ease-in-out;
+}
+
+.buttonsContainer span {
+  margin-left: 15px;
+  font-weight: 900;
+  font-size: 18px;
+  font-family: "Raleway";
+}
+
+.buttonsContainer:hover .line {
+  transform: translateX(10px);
+  width: 75px;
+}
+
+.getInTouch {
+  height: 100%;
+  min-height: 350px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: Trueno;
+  background-image: url("/assets/images/cover-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.getInTouch span {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--main-light-color);
+}
+
+.getInTouch h2 {
+  margin: 50px;
+  width: 30%;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: TruenoBd;
+  color: var(--main-light-color);
+}
+
+.line {
+  margin-top: 70px;
+}
+
+@media all and (min-width: 768px) {
+  .getInTouch {
+margin-top: 6rem !important;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .getInTouch h2 {
+    width: 80%;
+    max-width: 400px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .getInTouch {
+    margin-top: 0rem !important;
+      }
+}
+
+@media all and (max-width: 449px) {
+  .getInTouch {
+    min-height: 250px;
+  }
+  .getInTouch h2 {
+    width: 95%;
+    font-size: 18px;
+  }
+  .buttonsContainer {
+    margin: 0;
+  }
+}

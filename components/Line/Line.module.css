@@ -1,0 +1,49 @@
+.svgLine {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  
+  .svgLine span {
+    margin-left: 15px;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: Raleway;
+    align-self: flex-start;
+  }
+
+  .yellowPoint {
+    stroke: var(--main-light-bg-color);
+    stroke-width: 1;
+  }
+
+  .buttonsContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    transition: 0.5s ease-in-out;
+}
+
+.buttonsContainer .line, .after {
+    width: 50px;
+    height: 3.2px;
+    background: var(--main-light-bg-color);
+    margin: 0px 20px;
+    margin-top: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.buttonsContainer span {
+    margin-left: 15px;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: 'Raleway';
+}
+
+.buttonsContainer:hover .line {
+    transform: translateX(10px);
+    width: 75px;
+}

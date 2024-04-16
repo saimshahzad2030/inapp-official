@@ -1,0 +1,164 @@
+@font-face {
+  src: url(/assets/font/TruenoLt.otf);
+  font-family: Trueno;
+}
+
+@font-face {
+  src: url(/assets/font/TruenoBd.otf);
+  font-family: TruenoBd;
+}
+
+@font-face {
+  src: url(/assets/font/TruenoLt.otf);
+  font-family: TruenoLt;
+}
+
+.leftSide {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  background-color: var(--main-light-color);
+}
+
+.leftSideItem {
+  width: 85%;
+  margin-left: 5rem;
+}
+
+.leftSideItem h2 {
+  font-size: 44px;
+  font-weight: 400;
+  font-family: Trueno;
+  color: var(--main-dark-color);
+  margin-bottom: 0;
+}
+
+.leftSideItem p {
+  font-size: 18px;
+  max-width: 475px;
+  min-width: 100px;
+  width: 100%;
+  font-family: Trueno;
+}
+
+.leftSideItem span {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.svgLine {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.typewriter h3 {
+  color: var(--main-dark-color);
+  overflow: hidden;
+  font-weight: 900;
+  font-size: 48px;
+  white-space: nowrap;
+  font-family: TruenoBd;
+  animation: typing 4s steps(30, end) infinite,
+    blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  75% {
+    width: 50%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.svgLine span {
+  font-weight: bolder;
+  font-size: 16px;
+  color: var(--main-dark-color);
+  font-family: "Raleway";
+  margin-left: 1rem;
+}
+
+.yellowPoint {
+  stroke: var(--main-light-bg-color);
+  stroke-width: 1;
+}
+
+.paragraphOne strong {
+  font-family: TruenoBd;
+  color: #2c3e50;
+}
+
+.paragraphOne {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.paragraphTwo strong {
+  color: #2c3e50;
+  font-family: TruenoBd;
+}
+
+@media all and (max-width: 768px) {
+  .leftSide {
+    width: 95% !important;
+  }
+  .leftSideItem{
+    margin-left: 0 !important;
+  }
+}
+
+@media all and (max-width: 912px) {
+  .leftSide {
+    width: 90%;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .leftSideItem {
+    margin-left: 1rem;
+    padding-bottom: 15px;
+  }
+  .leftSideItem p {
+    max-width: 100%;
+  }
+  .svgLine {
+    margin-top: 25px;
+  }
+}
+
+@media all and (max-width: 449px) {
+  .leftSide {
+    padding-left: 0rem;
+    width: 100%;
+  }
+  .leftSideItem {
+    width: 90%;
+    margin-left: 0.5rem;
+  }
+  .leftSideItem p {
+    font-size: 14px;
+    text-align: justify;
+  }
+  .leftSideItem h2 {
+    font-size: 24px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+  }
+  .typewriter h3 {
+    font-size: 24px;
+  }
+}
